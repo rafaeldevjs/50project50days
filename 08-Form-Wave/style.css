@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url(./font/Poppins-Regular.ttf), url(./font/Poppins-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #175092;
+  color: #cfcdcd;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #153861;
+  padding: 30px;
+}
+
+form h1 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+label {
+  position: absolute;
+  top: 15px;
+  transition: top 1s ease;
+}
+
+input, button {
+  color: #cfcdcd;
+  border: none;
+  font-size: 1.1rem;
+  padding: 10px;
+  background-color: transparent;
+  outline: none;
+}
+
+input {
+  border-bottom: 1px solid #cfcdcd;
+}
+
+button {
+  color: #072c57;
+  background-color: #79ade7;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+p {
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: #5d95d4;
+}
+
+.active {
+  top: -20px;
+  color: #79ade7;
+}
+
+input:focus {
+  border-color: #79ade7;
+}
